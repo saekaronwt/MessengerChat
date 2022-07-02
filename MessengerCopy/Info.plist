@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>NSCameraUsageDescription</key>
-	<string>This app wants to take pictures</string>
+	<string>Please allow acces to take a profile picture.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>This app wants to use your photos</string>
+	<string>Please allow acces to select a photo your profile.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
