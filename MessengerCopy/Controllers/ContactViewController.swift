@@ -6,17 +6,29 @@
 //
 
 import UIKit
-import SwiftUI
 
 class ContactViewController: UIViewController {
 
+    @IBOutlet weak var viewSearchContact: UIView!
+    @IBOutlet weak var viewContent: UIView!
+    
+    @IBOutlet weak var RoundProfileImage: UIImageView!
+    
+    @IBOutlet weak var RoundImageBackgPerson: UIImageView!
+    @IBOutlet weak var RoundImageProfile: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        print("Bienvenidos a Contact")
-        view.backgroundColor = .red
+        cornersContact()
+        
     }
 
-
+    func cornersContact(){
+        viewSearchContact.layer.cornerRadius = 12;
+        viewContent.roundedCorners(corners: [.topLeft, .topRight], radius: 25)
+        RoundProfileImage.layer.cornerRadius = 28;
+        RoundImageProfile.layer.cornerRadius = 30;
+        RoundImageBackgPerson.layer.cornerRadius = 15;
+    }
 }
 

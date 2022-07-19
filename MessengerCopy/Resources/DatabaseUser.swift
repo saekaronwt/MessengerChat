@@ -34,7 +34,7 @@ extension DatabaseUser {
                 return
             }
             completion(true)
-        })
+        })  
     }
 }
 
